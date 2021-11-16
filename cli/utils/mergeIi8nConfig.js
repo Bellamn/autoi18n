@@ -8,7 +8,7 @@ const cwdPath = process.cwd()
 module.exports = function mergeOptions(programOption) {
   const options = defaultConfig;
   const configFileName = programOption && programOption.config || 'autoi18n.config.js'
-
+  Object.assign(options, programOption)
   const configFilePath = path.join(cwdPath, configFileName)
   // 读取 autoi18n.config.js 中设置的参数，然后并入 options
   if (fs.existsSync(configFilePath)) {

@@ -6,6 +6,7 @@ const log = require('../utils/log');
 const defaultOptions = require('../utils/autoi18n.config')
 const LocaleFile = require('../utils/localeFile')
 const baseUtils = require('../utils/baseUtils')
+const mergeIi8nConfig = require('../utils/mergeIi8nConfig')
 const { transform } = require('../../core/index')
 
 
@@ -24,12 +25,12 @@ async function doInquire(filePath) {
 }
 
 function getRandomChar(){
-  let num = Math.floor(Maht.random()*(122-97)) + 97
+  let num = Math.floor(Math.random()*(122-97)) + 97
   return String.fromCharCode(num)
 }
 function translate(str){
   let result = []
-  let lenth =Math.floor(Maht.random()*30)
+  let lenth =Math.floor(Math.random()*30)
   for(let i=0; i<lenth; i++){
     result.push(getRandomChar())
   }
@@ -46,9 +47,14 @@ function traverse(data){
   }
 }
 module.exports = async function translate(programOption) {
-
+  const cwdPath = process.cwd()
+  // console.log(programOption)
   // 合并配置文件
   const options = mergeIi8nConfig(programOption)
+  
+  log.info('当前文件路径: '+cwdPath)
+  log.info('加载文件路径: '+options.file);
+  // console.log(options)
   const answers = await doInquire(options.file);
 
   const localeFile = new LocaleFile(options.localePath)
@@ -58,7 +64,7 @@ module.exports = async function translate(programOption) {
  // 遍历翻译
  traverse(data)
 
- localeFile.createConf(data, locale, options);
+ localeFile.createConf(data, '', options,options.file );
 
   log.success('翻译完成');
 };
