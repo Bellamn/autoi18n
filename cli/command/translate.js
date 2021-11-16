@@ -15,7 +15,7 @@ async function doInquire(filePath) {
   try {
     fs.accessSync(filePath);
   } catch (e) {
-    log.error()
+    log.error('文件不存在')
     configExist = false;
     process.exit(0)
   }
@@ -45,7 +45,7 @@ function traverse(data){
     }
   }
 }
-module.exports = async function initFileConf(programOption) {
+module.exports = async function translate(programOption) {
 
   // 合并配置文件
   const options = mergeIi8nConfig(programOption)
