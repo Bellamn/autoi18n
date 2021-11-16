@@ -564,7 +564,7 @@ module.exports = function (webpackEnv) {
           test: /\.(js|mjs|jsx|ts|tsx)$/,
           use: [
             {
-              loader: 'autoi18n',
+              loader: 'autoi18n-tool',
               options: {}
             }
           ],

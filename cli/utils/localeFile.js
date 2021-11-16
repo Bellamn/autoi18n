@@ -31,7 +31,7 @@ module.exports = class LocaleFile {
    * @param {string} locale    locales标识
    * @param {object} options   自动国际化配置对象
    */
-  createConf(values, locale, options) {
+  createConf(values, locale, options, filePath='') {
     const folder = (
       this.localesDir.startsWith('/')
         ? this.localesDir
@@ -43,7 +43,7 @@ module.exports = class LocaleFile {
       mkdirMultipleSync(folder)
     }
     const localeFileExt = options.localeFileExt || '.json'
-    const configFilePath = path.join(folder, `${locale}${localeFileExt}`);
+    const configFilePath =filePath || path.join(folder, `${locale}${localeFileExt}`);
     return new Promise((resolve, reject) => {
       let moduleIdent = options.modules === 'commonjs' ? 'module.exports = ' : 'export default '
       moduleIdent = localeFileExt === '.json' ? '' : moduleIdent
@@ -60,11 +60,11 @@ module.exports = class LocaleFile {
   /**
    * 获取配置值
    * @param {string} locale  key
-   * @param {object} options   自动国际化配置对象
+   * @param {object} options 自动国际化配置对象
    */
-  getConf(locale, options) {
+  getConf(locale, options, filePath='') {
     const localeFileExt = options.localeFileExt || '.json'
-    const configFilePath = path.join(cwdPath, this.localesDir, `${locale}${localeFileExt}`);
+    const configFilePath =filePath || path.join(cwdPath, this.localesDir, `${locale}${localeFileExt}`);
     let data = {}
     if (fs.existsSync(configFilePath)) {
       let content = fs.readFileSync(configFilePath, { encoding: 'utf-8' })
