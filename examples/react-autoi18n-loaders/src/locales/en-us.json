@@ -1,5 +1,487 @@
 {
-  "1457a8cf081b42e8461e210209b9661c": "hjmdqvfmodbwntfjne",
-  "a7bac2239fcdcb3a067903d8077c4a07": "swapshx",
-  "f9fb6a063d1856da86a06def2dc6b921": "cswwwllbtxeetfcxedsbfb"
+  "final_KEY (文案唯一标识)": "Chinese (zh-cn)",
+  "navMenu": {
+    "newRequest": "New application",
+    "myToDos": "My to-do list",
+    "myApplications": "My application",
+    "myNotices": "Let me know",
+    "myDoneTasks": "My work has been done",
+    "drafts": "drafts ",
+    "searchProcesses": "Process query",
+    "standInSettings": "Proxy settings",
+    "reportCenter": "Report center",
+    "quickProcessSetup": "Fast process configuration",
+    "adminConsole": "Control desk",
+    "backToOldVersion": "Return to previous version",
+    "quickProcessMessage": "Fast process is a tool that can create a process template by simple drag and drop without programming.",
+    "requestToTryIt": "Application experience",
+    "mars": "Process analysis",
+    "dashboard": "User behavior analysis"
+  },
+  "inquiryProcessMore": {
+    "fileType": "Attachment type",
+    "process": "Process type",
+    "searchInfo": "operation flow ",
+    "chooseFileType": "Please select attachment type",
+    "noFile": "No attachments",
+    "chooseDelFile": "Select attachments to delete",
+    "uploadFile": "Upload attachments",
+    "uploadText": "Drag the file here or click upload"
+  },
+  "home": {
+    "title": {
+      "frequentlyUsedProcesses": "Recently used",
+      "myFavorites": "My collection",
+      "processApplication": "Process application"
+    },
+    "myFavorites": {
+      "notification": "You can collect up to 10 items. Please remove some collections before adding new ones"
+    },
+    "search": {
+      "placeholder": "Searchable process name"
+    },
+    "group": {
+      "group": "Classification",
+      "all": "whole",
+      "groupSettings": "Classification settings",
+      "top": "Topping",
+      "closeTheTop": "Cancel topping",
+      "other": "Fast process",
+      "Unfold": "open",
+      "packUp": "Put away",
+      "noData": "No search results"
+    },
+    "table": {
+      "name": "name",
+      "description": "describe",
+      "contact": "contacts"
+    },
+    "message": {
+      "noCommonList": "No recent use",
+      "noFavList": "No collection",
+      "collectionSuccess": "Collection successful",
+      "unfavored": "Collection cancelled"
+    },
+    "tooltip": {
+      "helper": "Help documentation",
+      "language": "switch language"
+    }
+  },
+  "common": {
+    "tips": {
+      "noData": "No data"
+    },
+    "table": {
+      "operation": "operation",
+      "approvalDocument": "Approval document",
+      "summary": "Document summary",
+      "applicant": "applicant",
+      "currentStage": "Current approval node",
+      "amount": "amount of money",
+      "applicationDate": "Initiation time",
+      "status": "Process status",
+      "expand": "open",
+      "close": "Put away"
+    },
+    "button": {
+      "print": "Print",
+      "approve": "agree",
+      "reject": "refuse",
+      "refuse": "refuse",
+      "cancel": "cancel",
+      "advancedSearch": "Advanced search",
+      "search": "search",
+      "clear": "eliminate",
+      "more": "more",
+      "revokeApproval": "Revoke approval",
+      "withdrawRequest": "Withdrawal of application",
+      "delete": "delete",
+      "oK": "determine"
+    },
+    "pagination": "There are {total} entries in total",
+    "toast": {
+      "copySuccessful": "Copy succeeded",
+      "cancelSuccessful": "Cancellation succeeded",
+      "operationSuccessful": "Operation succeeded",
+      "operationFailure": "operation failed"
+    },
+    "select": {
+      "processStage": "Process node",
+      "initiator": "Initiator",
+      "applicant": "applicant",
+      "company": "Affiliated company",
+      "department": "Belonging Department",
+      "associatedApplicationNo": "Associated doc No",
+      "processName": "Process name"
+    },
+    "input": {
+      "applicationNo": "Document No",
+      "description": "Application description"
+    },
+    "datepicker": {
+      "timeReceived": "arrival time"
+    },
+    "placeholder": {
+      "startTime": "start time",
+      "endTime": "End time"
+    },
+    "status": {
+      "approving": "Under approval",
+      "stopped": "Terminated",
+      "approved": "Has ended",
+      "returned": "Returned",
+      "all": "whole"
+    },
+    "person": {
+      "team": "department",
+      "email": "mailbox",
+      "sendKimMessage": "Send Kim message"
+    },
+    "tooltip": {
+      "expandAll": "Expand all",
+      "closeAll": "Put it all away"
+    }
+  },
+  "myToDos": {
+    "title": {
+      "myToDos": "My to-do list"
+    },
+    "group": {
+      "allToDos": "All to do"
+    },
+    "sort": {
+      "newestFirst": "In reverse order of arrival time",
+      "latestFirst": "In reverse order of arrival time",
+      "oldestFirst": "In positive order of arrival time"
+    },
+    "search": {
+      "placeholder": "Document number, applicant and application description"
+    },
+    "icon": {
+      "standIn": "generation"
+    },
+    "tooltip": {
+      "copy": "Click to copy the document number"
+    },
+    "hint": {
+      "selectedProcess": "Selected document"
+    },
+    "messageBox": {
+      "approveTips": "Approve {total} approval tasks in batch",
+      "rejectTips": "Reject {total} approval tasks in batch"
+    },
+    "operationTips": {
+      "requestsApproved": "Batch approval: successfully approved {total} approvals",
+      "requestsRejected": "Batch reject operation: {total} approvals were rejected successfully"
+    },
+    "quickCard": {
+      "tip": "Please go to the details page for approval"
+    }
+  },
+  "myDoneTasks": {
+    "title": {
+      "myDoneTasks": "My work has been done"
+    },
+    "sort": {
+      "newestFirst": "In reverse order of completion time",
+      "oldestFirst": "In positive order of completion time"
+    },
+    "searchBox": {
+      "searchRules": "Document number, applicant and application description"
+    },
+    "table": {
+      "timeEnded": "Completion time"
+    },
+    "popUpWindows": {
+      "withdrawRequest": "Are you sure you want to withdraw your application?",
+      "revokeApproval": "Are you sure you want to revoke the approval?"
+    }
+  },
+  "myNotices": {
+    "title": {
+      "myNotices": "Let me know"
+    },
+    "group": {
+      "all": "whole",
+      "unread": "Unread notice"
+    },
+    "sort": {
+      "newestFirst": "In reverse order of arrival time",
+      "oldestFirst": "In positive order of arrival time"
+    },
+    "button": {
+      "selectedRead": "Check read",
+      "allRead": "All read",
+      "selectedUnread": "Read only unread",
+      "totalRead": "One key read"
+    },
+    "popUpWindows": {
+      "read": "Set {total} unread documents as read"
+    },
+    "searchBox": {
+      "searchRules": "Document number, applicant and application description"
+    },
+    "table": {
+      "message": "Notice content"
+    },
+    "icon": {
+      "standIn": "generation"
+    }
+  },
+  "myApplications": {
+    "sort": {
+      "newestFirst": "In reverse order of initiation time",
+      "oldestFirst": "In positive order of initiation time"
+    },
+    "searchBox": {
+      "searchRules": "Document number and application description"
+    },
+    "table": {
+      "approver": "Current approver",
+      "currentStage": "Approval node",
+      "approvalResults": "Approval results"
+    },
+    "button": {
+      "nudge": "Urge",
+      "revokeApproval": "Revoke approval",
+      "createPaymentTicket": "Create payment document"
+    }
+  },
+  "drafts": {
+    "searchBox": {
+      "searchRules": "Document number and application description"
+    },
+    "deleteDraft": {
+      "AreYouSureToDeleteTheDraft": "Are you sure to delete the current draft?",
+      "DeleteSuccessfully": "Delete succeeded",
+      "Note": "Tips"
+    }
+  },
+  "searchProcesses": {
+    "title": {
+      "searchProcesses": "Process query"
+    },
+    "button": {
+      "export": "export",
+      "financeExport": "Financial business export",
+      "addAttachment": "Add attachment",
+      "cancelAttachment": "Delete attachment"
+    },
+    "sort": {
+      "newestFirst": "In reverse order of initiation time",
+      "oldestFirst": "In positive order of initiation time"
+    },
+    "searchBox": {
+      "searchRules": "Document number, applicant and application description"
+    },
+    "table": {
+      "approved": "Supplier / customer",
+      "processOwner": "Process leader"
+    },
+    "radio": {
+      "paymentStatus": "Paid",
+      "yes": "yes",
+      "no": "no"
+    },
+    "advancedSearch": {
+      "paymentDate": "Estimated payment time"
+    },
+    "messageBox": {
+      "title": "Export succeeded. Please go to the report center to check",
+      "tips": "Click OK to jump to the report center"
+    }
+  },
+  "standInSettings": {
+    "title": {
+      "standInSettings": "Proxy settings",
+      "newStandIn": "New agent"
+    },
+    "button": {
+      "add": "newly added",
+      "disable": "Deactivate",
+      "transferTasks": "transfer",
+      "recallTasks": "take back"
+    },
+    "toast": {
+      "createSuccessful": "New successfully"
+    },
+    "tips": {
+      "agentRules": "After the agent rule is set, all documents approved by the original applicant will be automatically transferred to the agent for approval within the validity period of the agent rule"
+    },
+    "sort": {
+      "newestFirst": "In reverse order of creation time",
+      "oldestFirst": "In positive order of creation time"
+    },
+    "searchBox": {
+      "searchRules": "agent"
+    },
+    "table": {
+      "processStage": "Process node",
+      "condition": "condition",
+      "standIn": "agent",
+      "coverPeriod": "Agency time",
+      "notes": "remarks",
+      "status": "state",
+      "creationTime": "Creation date"
+    },
+    "status": {
+      "expired": "be overdue",
+      "active": "take effect"
+    },
+    "messageBox": {
+      "radio": "Whether to withdraw all unprocessed to-do after the agent is completed",
+      "title": "Are you sure you want to disable it?",
+      "tips": "The validity period set by the agent cannot exceed 14 natural days",
+      "select": "Please select",
+      "selectEndDate": "Select end time",
+      "selectStartDate": "Select start time",
+      "agent": "agent",
+      "searchRules": "Please select a process",
+      "stage": "Task node",
+      "selectAStage": "Please select task node",
+      "startingAndEndingTime": "Start time",
+      "condition": "condition",
+      "enterACondition": "Please enter criteria",
+      "transferRadio": "Transfer all to-do to the agent when the agent becomes effective",
+      "yes": "yes",
+      "no": "no",
+      "cancelRadio": "Withdraw unprocessed to-do after the agent ends",
+      "notes": "remarks",
+      "notesRules": "Within 50 words"
+    }
+  },
+  "reportCenter": {
+    "title": {
+      "reportCenter": "Report center"
+    },
+    "button": {
+      "add": "newly build",
+      "reset": "Reset",
+      "submit": "Submit",
+      "view": "see"
+    },
+    "sort": {
+      "newestFirst": "In reverse order of submission time",
+      "oldestFirst": "In positive order of submission time"
+    },
+    "table": {
+      "submissionTime": "Submission time",
+      "parameters": "parameter",
+      "status": "state",
+      "completed": "end",
+      "description": "explain",
+      "error": "error",
+      "updated": "Update time"
+    }
+  },
+  "bPMPortalMobile": {
+    "myToDos": {
+      "title": "My to-do list",
+      "button": {
+        "selectAll": "Select all",
+        "reject": "refuse",
+        "agree": "agree",
+        "finish": "complete"
+      }
+    },
+    "navMenu": {
+      "myTasks": "My mission",
+      "myToDos": "My to-do list",
+      "myDoneTasks": "My work has been done",
+      "unread": "Unread notice",
+      "read": "Read notice",
+      "myNotices": "Let me know",
+      "requests": "New process",
+      "myApplications": "My application",
+      "drafts": "drafts ",
+      "launchApplication": "Initiate application",
+      "contractManagement": "contract management ",
+      "recipientsContract": "Requisition contract",
+      "deliveryContract": "Handover contract",
+      "systemSettings": "System settings",
+      "languageSettings": "Language settings",
+      "feedback": "Problem feedback",
+      "myProcess": "My process",
+      "navigation": "Navigation",
+      "comment": "Approval comments"
+    },
+    "launchApplication": {
+      "title": "Initiate application",
+      "button": {
+        "edit": "edit",
+        "finish": "complete",
+        "cancel": "cancel"
+      },
+      "group": "Process grouping",
+      "recentlyUsedProcess": "Recently used"
+    },
+    "frequentProcesses": {
+      "title": "Common processes"
+    },
+    "pinned": {
+      "title": "My collection"
+    },
+    "process": {
+      "ProcessCategories": "Process classification",
+      "all": "whole",
+      "selectAll": "Select all",
+      "TimeOrder": "Time sorting",
+      "newestFirst": "Recent arrival priority",
+      "oldestFirst": "Earliest arrival priority",
+      "newestFirstNotified": "Recent notification is preferred",
+      "oldestFirstNotified": "The first to know will take precedence",
+      "latestFirst": "Recent arrival priority",
+      "isRejected": "Returned",
+      "batch": "Batch approval",
+      "cancelBatch": "Cancel batch",
+      "selected": "Selected",
+      "NotificationType": "Notification mode",
+      "Personal": "Personal notification",
+      "System": "System notification",
+      "ReadAll": "One key read",
+      "ViewUnread": "Read only unread",
+      "AllRead": "All notifications have been marked as read",
+      "NoTasks": "There are no to DOS to be processed",
+      "NoBatchableTasks": "There are no to DOS to batch process",
+      "NoDoneContent": "No information has been done",
+      "NoNoticedContent": "No notification information",
+      "NoUnreadContent": "No unread notice",
+      "hour": "hour",
+      "day": "day",
+      "minute": "minute",
+      "recentlyAssigned": "Recent assignment",
+      "recentlyFirst": "Recently assigned priority",
+      "longestFirst": "Longest waiting priority"
+    },
+    "common": {
+      "tips": "Go to PC to initiate application",
+      "search": {
+        "placeholder": "Search process name"
+      }
+    },
+    "todo": {
+      "hasNew": "You have a new to do, please pull down or refresh this page manually",
+      "hiddenProcess": "Hide this type of process",
+      "filterProcess": "Filter this type of to-do",
+      "cancelHidden": "Unhide",
+      "cancelHiddenSuccessTip": "After hiding successfully, you can go to the bottom of the page to view the hidden to-do list",
+      "cancelHiddenSuccess": "Unhide succeeded",
+      "approvalHiddenTip": "This type of task is hidden, please enter the list page for approval",
+      "noBatchApproval": "Batch approval is not supported for the following to DOS",
+      "Hidden": "Hidden",
+      "newUpdateTime": "Last updated",
+      "recentlyFirst": "Recently assigned priority",
+      "longestFirst": "Longest waiting priority",
+      "cancelHiddenTip": "The following types of tasks are hidden, click",
+      "cancelHiddenOk": "Unhide",
+      "hideProcessCollapse": "The following is a hidden to-do list. Click to put it away",
+      "hideProcessExpand": "Some to-do items are hidden. Click to expand",
+      "submitReject": "Submit reject",
+      "batchProcess": "Batch processing",
+      "selected": "Selected",
+      "batch": "batch",
+      "allLoad": "All loaded",
+      "loading": "Loading"
+    }
+  }
 }

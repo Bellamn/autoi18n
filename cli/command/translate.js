@@ -8,7 +8,7 @@ const LocaleFile = require('../utils/localeFile')
 const baseUtils = require('../utils/baseUtils')
 const mergeIi8nConfig = require('../utils/mergeIi8nConfig')
 const { transform } = require('../../core/index')
-
+const baiduTranstale = require('../utils/baiduTranslate')
 
 async function doInquire(filePath) {
   // 1. 配置文件是否存在
@@ -24,28 +24,28 @@ async function doInquire(filePath) {
   return configExist;
 }
 
-function getRandomChar(){
-  let num = Math.floor(Math.random()*(122-97)) + 97
-  return String.fromCharCode(num)
-}
-function translate(str){
-  let result = []
-  let lenth =Math.floor(Math.random()*30)
-  for(let i=0; i<lenth; i++){
-    result.push(getRandomChar())
-  }
-  return result.join('')
-}
+// function getRandomChar(){
+//   let num = Math.floor(Math.random()*(122-97)) + 97
+//   return String.fromCharCode(num)
+// }
+// function translate(str){
+//   let result = []
+//   let lenth =Math.floor(Math.random()*30)
+//   for(let i=0; i<lenth; i++){
+//     result.push(getRandomChar())
+//   }
+//   return result.join('')
+// }
 
-function traverse(data){
-  for(let key of Object.keys(data)){
-    if(typeof data[key] === 'string'){
-      data[key] = translate('')
-    }else{
-      traverse(data[key])
-    }
-  }
-}
+// function traverse(data){
+//   for(let key of Object.keys(data)){
+//     if(typeof data[key] === 'string'){
+//       data[key] = translate('')
+//     }else{
+//       traverse(data[key])
+//     }
+//   }
+// }
 module.exports = async function translate(programOption) {
   const cwdPath = process.cwd()
   // console.log(programOption)
@@ -62,9 +62,15 @@ module.exports = async function translate(programOption) {
  let data = localeFile.getConf('', '', options.file)
  
  // 遍历翻译
- traverse(data)
+ try{
+  let res = await baiduTranstale(data)
 
- localeFile.createConf(data, '', options,options.file );
+  localeFile.createConf(res, '', options,options.file );
+ 
+ log.success('翻译完成');
+ }catch(error){
+   console.log(error)
+  log.error('翻译失败');
+ }
 
-  log.success('翻译完成');
 };

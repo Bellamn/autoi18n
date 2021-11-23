@@ -1,6 +1,6 @@
 {
   "name": "auto-extract",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "main": "./loaders/index.js",
   "license": "MIT",
   "bin": {
@@ -53,6 +53,7 @@
     "ansi-regex": "^5.0.1",
     "ansi-styles": "^4.3.0",
     "auto-extract": "^1.0.0",
+    "axios": "^0.24.0",
     "balanced-match": "^1.0.2",
     "base64-js": "^1.5.1",
     "bl": "^4.1.0",
